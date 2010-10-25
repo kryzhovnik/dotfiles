@@ -159,7 +159,7 @@ module Readline
 
   alias :old_readline :readline
   def readline(*args)
-    ln = old_readline(*args) + "\n"
+    ln = old_readline(*args)
     begin
       History.write_log(ln)
     rescue
