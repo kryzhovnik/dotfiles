@@ -1,4 +1,8 @@
-%w{rubygems wirble pp irb/ext/save-history}.each do |lib| 
+puts 'Use: ri(*names), cl, q,
+     Object#local_methods, Object#local_methods,
+     Class#class_methods, Class#defined_methods'
+      
+%w{rubygems wirble ap irb/ext/save-history}.each do |lib| 
   begin 
     require lib 
   rescue LoadError => err
@@ -24,8 +28,8 @@ IRB.conf[:PROMPT_MODE] = :SIMPLE
 # Loaded when we fire up the Rails console
 # among other things I put the current environment in the prompt
 
-if ENV['RAILS_ENV']
-  rails_env = ENV['RAILS_ENV']
+if ENV['_'].include?('rails')
+  rails_env = Rails.env
   rails_root = File.basename(Dir.pwd)
   prompt = "#{rails_root}[#{rails_env.sub('production', 'prod').sub('development', 'dev')}]"
   IRB.conf[:PROMPT] ||= {}
@@ -49,12 +53,12 @@ if ENV['RAILS_ENV']
   
   ### RAILS SPECIFIC HELPER METHODS
   # TODO: DRY this out
-  def log_ar_to (stream)
+  def log_ar_to(stream)
     ActiveRecord::Base.logger = expand_logger stream
     reload!
   end
 
-  def log_ac_to (stream)
+  def log_ac_to(stream)
     logger = expand_logger stream
     ActionController::Base.logger = expand_logger stream
     reload!
