@@ -1,6 +1,6 @@
 [user]
-  name = Andrey Samsonov
-  email = andrey.samsonov@gmail.com
+	name = Andrey Samsonov
+	email = andrey.samsonov@gmail.com
 [color]
   ui = true
 [color "branch"]
@@ -20,11 +20,12 @@
   whitespace = red reverse
 [core]
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
-  quotepath = false
+
 [alias]
   st = status
   ci = commit
   br = branch
+  bra = branch -a
   co = checkout
   df = diff
   lg = log -p
