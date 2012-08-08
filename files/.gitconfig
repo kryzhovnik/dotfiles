@@ -1,6 +1,6 @@
 [user]
-	name = Andrey Samsonov
-	email = andrey.samsonov@gmail.com
+  name = Andrey Samsonov
+  email = andrey.samsonov@gmail.com
 [color]
   ui = true
 [color "branch"]

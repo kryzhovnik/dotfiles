@@ -1,5 +1,5 @@
 # bash
-alias ll='ls -al'
+# alias ll='ls -al'
 
 # rails
 alias rs='rails s'
