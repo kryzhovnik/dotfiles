@@ -1,11 +1,13 @@
 {
   "color_scheme": "Packages/User/Railscasts.tmTheme",
-  
   "font_size": 12.0,
-  
+
   // The number of spaces a tab is considered equal to
   "tab_size": 2,
 
   // Set to true to insert spaces when tab is pressed
-  "translate_tabs_to_spaces": true
+  "translate_tabs_to_spaces": true,
+
+  // Controls auto pairing of quotes, brackets etc
+  "auto_match_enabled": false
 }
