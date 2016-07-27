@@ -17,7 +17,7 @@ fc-cache -vf ~/.fonts
 Open Terminal -> Preferencies -> Profiles -> Edit
 
 1. Set "Initial terminal size" to 140x35
-2. Set "Custom font" to Inconsalata LGC Regular (12px)
+2. Set "Custom font" to Inconsolata LGC Regular (12px)
 3. Set colors
   - background: #122637
   - color: #f7fbff
@@ -87,11 +87,10 @@ rbenv install 2.3.1
 
 3. Install packages: Better CoffeeScript, MarkdownHighlighting, Ruby Slim, SCSS
 
-4. Symlink preferencies:
+4. Copy user preferencies (symlinking breaks config reloading):
 
 ```sh
-cd dotfiles
-ln -sf $PWD/.config/sublime-text-3/Packages/User/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
+cp -r ~/code/dotfiles/.config/sublime-text-3 ~/.config 
 ```
 
 ## Apps
