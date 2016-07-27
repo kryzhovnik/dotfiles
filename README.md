@@ -4,13 +4,15 @@ This is notes for me to help in setup of my developmet machine. I use Ubuntu 16.
 
 ## Setting command line
 
-Install font
+### Install font
 
 ```sh
 cd dotfiles
 mkdir -p ~/.fonts/ && cp fonts/* ~/.fonts/
 fc-cache -vf ~/.fonts
 ```
+
+### Set Terminal preferencies
 
 Open Terminal -> Preferencies -> Profiles -> Edit
 
@@ -20,6 +22,16 @@ Open Terminal -> Preferencies -> Profiles -> Edit
   - background: #122637
   - color: #f7fbff
   - palate: Tango
+
+### Default placing for Terminal window
+
+1. Install CompizConfig Settings Manager `sudo apt-get -y install compizconfig-settings-manager`
+2. Run compizconfig-settings-manager
+3. Go "Place Windows" -> "Fixed Window Placement"
+4. Set "New" on "Windows with fixed positions"
+  - Positioned window: "class=Gnome-terminal"
+  - X: 120
+  - Y: 80
 
 ## zsh and oh-my-zsh
 
