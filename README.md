@@ -26,10 +26,15 @@ Open Terminal -> Preferencies -> Profiles -> Edit
 
   ```sh
   sudo apt-get install zsh
-  sudo apt-get install oh-my-zsh
+  sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
   cd dotfiles
-  cp .zshrc ~/
-  cp .oh-my-zsh ~/ -r
+  ln -sf $PWD/.zshrc     ~/
+  ln -sf $PWD/.oh-my-zsh/themes/kryzhovnik.zsh-theme ~/.oh-my-zsh/themes/
+
+  # Set zsh for root
+  sudo ln -sf $PWD/.zshrc     /root/.zshrc
+  sudo bash -c 'echo "exec zsh" >> /root/.bashrc'
   ```  
 
 ## Install common packages
