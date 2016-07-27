@@ -4,19 +4,18 @@ This is notes for me to help in setup of my developmet machine. I use Ubuntu 16.
 
 ## Setting command line
 
-Install powerline fonts
+Install font
 
   ```sh
-  wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
-  mkdir -p ~/.fonts/ && mv PowerlineSymbols.otf ~/.fonts/
+  cd dotfiles
+  mkdir -p ~/.fonts/ && mv fonts/inconsolatalgc.ttf ~/.fonts/
   fc-cache -vf ~/.fonts
-  mkdir -p ~/.config/fontconfig/conf.d/ && mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
   ```
 
 Open Terminal -> Preferencies -> Profiles -> Edit
 
 1. Set "Initial terminal size" to 160x40
-2. Set "Custom font", e.g. Inconsalata Bold
+2. Set "Custom font" to Inconsalata LGC Regular (12px)
 3. Set colors
   - background: #122637
   - color: #f7fbff
@@ -38,6 +37,9 @@ Open Terminal -> Preferencies -> Profiles -> Edit
   ```  
 
 ## Install common packages
+  ```sh
+  sudo apt-get update
+  sudo apt-get install build-essential libssl-dev ansible git-core
 ## Ruby with rbenv
 ## Install DBs: mysql, pg
 ## Text editors: sublime 3
