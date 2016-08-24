@@ -52,7 +52,7 @@ sudo bash -c 'echo "exec zsh" >> /root/.bashrc'
 
 ```sh
 sudo apt-get update
-sudo apt-get -y install build-essential libssl-dev ansible git-core tree
+sudo apt-get -y install build-essential libssl-dev ansible git-core tree unrar nodejs
 ```
 
 ## Ruby with rbenv
@@ -77,8 +77,12 @@ rbenv install 2.3.1
 
 3. Set global ruby `rbenv global 2.3.1`
 
-
 ## Install DBs: mysql, pg
+
+```sh
+sudo apt-get -y install sphinxsearch
+```
+
 ## Text editors: sublime 3
 
 1. [Download](https://www.sublimetext.com/3) and install package
@@ -96,5 +100,5 @@ cp -r ~/code/dotfiles/.config/sublime-text-3 ~/.config
 ## Apps
 
 ```sh
-sudo apt-get -y install google-chrome-stable gimp 
+sudo apt-get -y install google-chrome-stable gimp
 ```
