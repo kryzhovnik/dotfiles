@@ -17,7 +17,7 @@ fc-cache -vf ~/.fonts
 Open Terminal -> Preferencies -> Profiles -> Edit
 
 1. Set "Initial terminal size" to 140x35
-2. Set "Custom font" to Inconsolata LGC Regular (12px)
+2. Set "Custom font" to Source Code Pro Semibold (12px)
 3. Set colors
   - background: #122637
   - color: #f7fbff

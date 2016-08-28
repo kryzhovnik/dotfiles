@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"color_scheme": "Packages/Panda Syntax Sublime/Panda/panda-syntax.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
@@ -14,7 +14,8 @@
 		".capistrano",
 		"tmp"
 	],
-	"font_face": "Inconsolata",
+	// "font_face": "Inconsolata",
+	"font_face": "Source Code Pro",
 	"font_options":
 	[
 		"gray_antialias"
