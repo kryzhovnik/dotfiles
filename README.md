@@ -102,3 +102,19 @@ cp -r ~/code/dotfiles/.config/sublime-text-3 ~/.config
 ```sh
 sudo apt-get -y install google-chrome-stable gimp
 ```
+
+## GPG sign for github.com
+
+```sh
+sudo apt-get install gpa seahorse
+
+gpg --gen-key
+
+# Copy gpg key to [Github](https://github.com/settings/keys)
+gpg --list-secret-keys --keyid-format LONG
+gpg --armor --export <PASTE_LONG_KEY_HERE>
+
+# Setting git
+gpg --list-secret-keys
+git config --global user.signingKey <PASTE_SHORT_KEY_HERE>
+```

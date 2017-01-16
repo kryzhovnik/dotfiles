@@ -34,3 +34,7 @@
   ls = ls-files
 [push]
 	default = simple
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
