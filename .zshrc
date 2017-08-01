@@ -1,11 +1,12 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/kr/.oh-my-zsh
+  export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="kryzhovnik"
+#ZSH_THEME="random"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -85,3 +86,6 @@ source $ZSH/oh-my-zsh.sh
 
 bindkey "^[[1;3C" end-of-line
 bindkey "^[[1;3D" beginning-of-line
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
