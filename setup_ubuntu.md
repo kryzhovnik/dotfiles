@@ -55,6 +55,10 @@ sudo apt-get update
 sudo apt-get -y install build-essential libssl-dev ansible git-core tree unrar nodejs
 ```
 
+## Setup git
+
+`ln -s ~/code/dotfiles/.gitconfig ~/.gitconfig`
+
 ## Ruby with rbenv
 
 1. Install rbenv
@@ -62,8 +66,6 @@ sudo apt-get -y install build-essential libssl-dev ansible git-core tree unrar n
 ```sh
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 cd ~/.rbenv && src/configure && make -C src
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-~/.rbenv/bin/rbenv init
 ```
 
 2. Restart shell and check `type rbenv`
@@ -72,10 +74,10 @@ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 
 ```sh
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
-rbenv install 2.3.1
+rbenv install 2.3.3
 ```
 
-3. Set global ruby `rbenv global 2.3.1`
+3. Set global ruby `rbenv global 2.3.3`
 
 ## Install DBs: mysql, pg
 
