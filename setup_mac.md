@@ -109,7 +109,7 @@ ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local
 5. Copy user preferencies (symlinking breaks config reloading):
 
 ```sh
-cp -r ~/code/dotfiles/.config/sublime-text-3 ~/.config
+cp -r ~/code/dotfiles/.config/sublime-text-3 ~/Library/Application\ Support/Sublime\ Text\ 3/
 ```
 
 ## GPG sign for github.com
