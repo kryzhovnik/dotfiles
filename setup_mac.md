@@ -4,12 +4,16 @@ This is notes for me to help in setup of my developmet machine: macOS Sierra 10.
 
 ## Setting command line
 
+### iTerm2
+
+Download and install [https://www.iterm2.com](https://www.iterm2.com)
+
 ### Install font
 
 1. Install source-code-pro fonts form the repository (open in finder, go to otf dir, double click on the files)
 2. Set Source Code Pro as font in iTerm default profile
 
-### Set Terminal preferencies
+### iTerm preferencies
 
 Open Terminal -> Preferencies -> Profiles -> Edit
 
@@ -19,7 +23,7 @@ Open Terminal -> Preferencies -> Profiles -> Edit
   - palate: Tango Dark
   - background: #122637
   - foreground: #f7fbff
-
+4. Profiles -> Default -> Working directory -> Reuse previous session's directory
 
 ## Install Brew
 
