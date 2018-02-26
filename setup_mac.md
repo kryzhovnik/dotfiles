@@ -24,6 +24,7 @@ Open Terminal -> Preferencies -> Profiles -> Edit
   - background: #122637
   - foreground: #f7fbff
 4. Profiles -> Default -> Working directory -> Reuse previous session's directory
+5. Check off Profiles -> Terminal -> Environment -> Set locale variables automatically
 
 ## Install Brew
 
