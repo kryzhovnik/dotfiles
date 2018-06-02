@@ -69,7 +69,7 @@ rbenv install 2.3.3
 
 ## Install common packages
 
-`brew install wget ansible git-core tree unrar nodejs`
+`brew install wget ansible git-core tree unrar nodejs autojump`
 
 ## Setup git
 

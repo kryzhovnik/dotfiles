@@ -52,7 +52,7 @@ sudo bash -c 'echo "exec zsh" >> /root/.bashrc'
 
 ```sh
 sudo apt-get update
-sudo apt-get -y install build-essential libssl-dev ansible git-core tree unrar nodejs
+sudo apt-get -y install build-essential libssl-dev ansible git-core tree unrar nodejs autojump
 ```
 
 ## Setup git
@@ -96,7 +96,7 @@ sudo apt-get -y install sphinxsearch
 4. Copy user preferencies (symlinking breaks config reloading):
 
 ```sh
-cp -r ~/code/dotfiles/.config/sublime-text-3 ~/.config 
+cp -r ~/code/dotfiles/.config/sublime-text-3 ~/.config
 ```
 
 ## Apps
