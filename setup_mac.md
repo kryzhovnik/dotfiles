@@ -36,6 +36,8 @@ Open Terminal -> Preferencies -> Profiles -> Edit
 brew install zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+brew install autojump zsh-syntax-highlighting
+
 cd dotfiles
 ln -sf $PWD/.zshrc ~/
 ln -sf $PWD/.oh-my-zsh/themes/kryzhovnik.zsh-theme ~/.oh-my-zsh/themes/
@@ -69,7 +71,7 @@ rbenv install 2.3.3
 
 ## Install common packages
 
-`brew install wget ansible git-core tree unrar nodejs autojump`
+`brew install wget ansible git-core tree unrar nodejs`
 
 ## Setup git
 
