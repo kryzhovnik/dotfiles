@@ -1,7 +1,10 @@
 ZSH_DISABLE_COMPFIX=true
 
 # Path to your oh-my-zsh installation.
-  export ZSH=~/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
+
+# ~/.zshrcexport VISUAL=/usr/local/bin/subl
+export EDITOR=/usr/local/bin/subl
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -93,3 +96,6 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+

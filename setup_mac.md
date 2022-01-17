@@ -19,10 +19,7 @@ Open Terminal -> Preferencies -> Profiles -> Edit
 
 1. Set "Initial terminal size" to 140x35
 2. Set "Custom font" to Source Code Pro Semibold (12px)
-3. Set colors
-  - palate: Tango Dark
-  - background: #122637
-  - foreground: #f7fbff
+3. Set colors presets "Solarized Light"
 4. Profiles -> Default -> Working directory -> Reuse previous session's directory
 5. Check off Profiles -> Terminal -> Environment -> Set locale variables automatically
 
