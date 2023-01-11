@@ -89,6 +89,9 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias be="bundle exec"
+alias r="bin/rails"
+
 bindkey "^[[1;3C" end-of-line
 bindkey "^[[1;3D" beginning-of-line
 
@@ -99,3 +102,9 @@ eval "$(rbenv init -)"
 
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
+export PATH="$PATH:$HOME/code/flutter/bin"
+export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
