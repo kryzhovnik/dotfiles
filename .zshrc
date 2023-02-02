@@ -104,6 +104,7 @@ export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
 export PATH="$PATH:$HOME/code/flutter/bin"
 export PATH="/usr/local/opt/openjdk@17/bin:$PATH"
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
