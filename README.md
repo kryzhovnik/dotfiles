@@ -74,11 +74,11 @@ rbenv install 3.2.2
 
 3. Set global ruby `rbenv global 3.2.2`
 
-## Install Xcode
+## Install NVM
 
-1. Install Xcode through App Store
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
 
-2. In terminal `xcode-select --install`
+nvm install node
 
 ## Install common packages
 
