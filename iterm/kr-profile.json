@@ -381,9 +381,11 @@
   "Flashing Bell" : false,
   "Silence Bell" : false,
   "Ansi 14 Color" : {
-    "Green Component" : "0.8862745",
-    "Blue Component" : "0.8862745",
-    "Red Component" : "0.2039216"
+    "Red Component" : 0.094090662896633148,
+    "Color Space" : "sRGB",
+    "Blue Component" : 0.70391845703125,
+    "Alpha Component" : 1,
+    "Green Component" : 0.69694253746271873
   },
   "Name" : "kr-profile",
   "Cursor Text Color" : {
