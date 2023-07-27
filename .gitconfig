@@ -20,7 +20,7 @@
   whitespace = red reverse
 [core]
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
-  editor = subl -n -w
+	editor = micro
 
 [alias]
   st = status
