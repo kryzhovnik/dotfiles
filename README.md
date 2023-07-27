@@ -9,6 +9,10 @@ This is notes for me to help in setup of my developmet machine: macOS Sierra 10.
 
     defaults write com.apple.dock "autohide-delay" -float "0" && killall Dock
 
+### Install Raycast
+
+https://www.raycast.com
+
 ## Setting command line
 
 ### iTerm2
