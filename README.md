@@ -86,7 +86,7 @@ nvm install node
 
 ## Install common packages
 
-`brew install wget ansible tree`
+`brew install wget ansible tre micro`
 
 ## Setup git
 
