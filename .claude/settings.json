@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(chmod:*)",
+      "Bash(cat:*)",
+      "Bash(zsh -c 'echo $fpath')",
+      "Bash(xargs cat:*)",
+      "Bash(kamal completions:*)",
+      "Bash(kamal completion:*)",
+      "Bash(kamal --completions)",
+      "Bash(kamal help:*)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Bash(find:*)"
+    ],
+    "defaultMode": "default"
+  },
+  "model": "Opus",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "^(Edit|MultiEdit|Write)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r 'select(.tool_name | test(\"^(Edit|MultiEdit|Write)$\")) | .tool_input.file_path | select(test(\"\\\\.(rb|rake|gemspec)$\"))' | xargs -I {} rubocop --auto-correct --only Layout/TrailingWhitespace {} 2>/dev/null"
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash ~/.claude/statusline-enhanced.sh"
+  },
+  "alwaysThinkingEnabled": true
+}

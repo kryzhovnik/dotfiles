@@ -42,6 +42,14 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 nvm install node
 ```
 
+## Claude Code
+
+```sh
+ln -sf ~/code/dotfiles/.claude/commands ~/.claude/
+ln -sf ~/code/dotfiles/.claude/settings.json ~/.claude/
+ln -sf ~/code/dotfiles/.claude/statusline-enhanced.sh ~/.claude/
+```
+
 ## Secrets
 
 Create `~/.secrets` for API keys (sourced by .zshrc):
