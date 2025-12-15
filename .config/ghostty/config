@@ -1,0 +1,13 @@
+# Font
+font-family = "Source Code Pro"
+font-style = Semibold
+font-size = 16
+
+# Window
+window-padding-x = 8
+window-padding-y = 8
+
+keybind = shift+enter=text:\n
+
+# Theme
+theme = Afterglow

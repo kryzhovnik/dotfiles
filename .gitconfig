@@ -1,6 +1,7 @@
 [user]
   name = Andrey Samsonov
   email = andrey.samsonov@gmail.com
+	signingKey = /Users/kr/.ssh/id_rsa.pub
 [color]
   ui = true
 [color "branch"]
@@ -17,9 +18,9 @@
   changed = green
   untracked = cyan
 [color "diff"]
-  whitespace = red reverse
+	whitespace = red reverse
 [core]
-  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	whitespace = trailing-space,space-before-tab
 	editor = micro
 
 [alias]
@@ -37,3 +38,16 @@
 	default = simple
 [credential]
   helper = osxkeychain
+[commit]
+	gpgSign = true
+[gpg]
+	format = ssh
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[http]
+	postBuffer = 524288000
+[diff]
+	wsErrorHighlight = all
