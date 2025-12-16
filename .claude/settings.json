@@ -1,16 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(chmod:*)",
-      "Bash(cat:*)",
-      "Bash(zsh -c 'echo $fpath')",
-      "Bash(xargs cat:*)",
-      "Bash(kamal completions:*)",
-      "Bash(kamal completion:*)",
-      "Bash(kamal --completions)",
-      "Bash(kamal help:*)",
       "WebSearch",
-      "WebFetch(domain:github.com)",
+      "WebFetch(domain:api.rubyonrails.org)",
+      "WebFetch(domain:rubyllm.com)",
       "Bash(find:*)"
     ],
     "defaultMode": "default"
